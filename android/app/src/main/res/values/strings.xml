@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">teachmeet-mobile</string>
+    <string name="title_activity_main">teachmeet-mobile</string>
+    <string name="package_name">com.teachmeet.angular</string>
+    <string name="custom_url_scheme">com.teachmeet.angular</string>
+</resources>
