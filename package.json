@@ -3,12 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --host 0.0.0.0",
-    "build": "npm run update-config && ng build",
+    "start": "ng serve --host 0.0.0.0 --port 4200",
+    "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "update-config": "node update-config.js",
-    "build:android": "npm run build && npx cap copy android"
+    "build:android": "npm run build && npx cap copy android && npx cap sync"
   },
   "private": true,
   "dependencies": {
@@ -41,6 +40,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "typescript": "~5.0.2"
+    "typescript": "~5.0.2",
+    "ts-node": "^10.9.1"
   }
 }
