@@ -3,7 +3,7 @@
   --primarycolor: #3953a4;
   --secondarycolor: #f47a56;
   --light-blue: #2c418123;
-  --grey-text: #2c41818d;
+  --grey-text: #9b9b9b;
 }
 /* fonts used start */
 @font-face {
@@ -102,11 +102,15 @@ span {
   background-color: #f47a56;
 }
 
+.grey-text {
+  color: var(--grey-text);
+}
+
 .text-color-primary {
-  color: #3953a4;
+  color: var(--primarycolor);
 }
 .text-color-secondary {
-  color: #f47a56;
+  color: var(--secondarycolor);
 }
 
 .border-8 {

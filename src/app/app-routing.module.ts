@@ -10,8 +10,7 @@ const routes: Routes = [
   },
   {
     path: 'student',
-    loadChildren: () =>
-      import('./account/account.module').then((m) => m.AccountModule),
+    loadChildren: () => import('./core/core.module').then((m) => m.CoreModule),
   },
 ];
 

@@ -6,7 +6,8 @@ const config: CapacitorConfig = {
   webDir: 'dist/mobile',
   bundledWebRuntime: false,
   server: {
-    url: 'http://192.168.10.7:4200', // Static IP
+    url: 'http://192.168.10.14:4200',
+    //url: 'http://192.168.10.3:4200', // Static IP
     cleartext: true,
   },
 };
