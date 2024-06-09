@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuController } from '@ionic/angular';
+import { MenuController, ModalController } from '@ionic/angular';
+import { MyProfileComponent } from '../my-profile/my-profile.component';
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,11 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
-  constructor(private menuController: MenuController, private router: Router) {}
+  constructor(
+    private menuController: MenuController,
+    private router: Router,
+    private modalController: ModalController
+  ) {}
 
   toggleMenu() {
     console.log('Toggle menu clicked');
@@ -22,5 +27,14 @@ export class HomeComponent {
 
   onLogout(path: any) {
     this.onRoute(path);
+  }
+  async myProfileComponent() {
+    const modal = await this.modalController.create({
+      component: MyProfileComponent,
+      componentProps: {
+        // Pass any props if needed
+      },
+    });
+    return await modal.present();
   }
 }
