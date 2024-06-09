@@ -11,5 +11,6 @@ export class LoginComponent {
 
   onRoute(path: any) {
     this.router.navigate([path]);
+    console.log(path);
   }
 }

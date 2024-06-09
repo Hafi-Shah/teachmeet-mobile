@@ -227,3 +227,11 @@ p {
 .bg-hover-secondary-light:hover {
   background: #f47b5640;
 }
+
+input:hover,
+input:focus,
+textarea:hover,
+textarea:focus {
+  outline: none;
+  box-shadow: none;
+}

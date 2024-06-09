@@ -1,16 +1,17 @@
 <ion-menu side="end" contentId="drawr">
-  <!-- <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu Content</ion-title>
-    </ion-toolbar>
-  </ion-header> -->
   <ion-content class="ion-padding">
     <div class="menu d-flex justify-content-between vh-100 flex-column">
       <div>
         <ul>
-          <li><i class="bi bi-person-fill me-1"></i> Profile</li>
-          <li><i class="bi bi-bell-fill me-1"></i> Notifications</li>
-          <li><i class="bi bi-gear-wide-connected me-1"></i> Setting</li>
+          <li (click)="onRoute('student/myProfile')">
+            <i class="bi bi-person-fill me-1"></i> Profile
+          </li>
+          <li (click)="onRoute('student/notification')">
+            <i class="bi bi-bell-fill me-1"></i> Notifications
+          </li>
+          <li (click)="onRoute('student/setting')">
+            <i class="bi bi-gear-wide-connected me-1"></i> Setting
+          </li>
         </ul>
       </div>
       <div>

@@ -17,6 +17,7 @@ export class HomeComponent {
 
   onRoute(path: any) {
     this.router.navigate([path]);
+    console.log(path);
   }
 
   onLogout(path: any) {

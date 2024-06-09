@@ -36,7 +36,12 @@
     </form>
     <p class="text-center mt-3 text-color-primary">
       Don't Have an account -
-      <span class="register text-color-secondary"> Register Now! </span>
+      <span
+        (click)="onRoute('/register')"
+        class="register text-color-secondary"
+      >
+        Register Now!
+      </span>
     </p>
   </div>
 </section>
